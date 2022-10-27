@@ -2,7 +2,8 @@ name: manual trigger sample
 
 on:
   workflow_dispatch:
-
+  schedule:
+    - cron: '0 4 * * *'
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
